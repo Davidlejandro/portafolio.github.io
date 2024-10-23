@@ -1,0 +1,1156 @@
+/* Tamaño del contenido de toda la pagina*/
+html {
+    font-size: 15px;
+}
+
+/*voy a usar mediasquery para hacer adaptable la letra a un dispositivo diferente*/
+@media screen and(max-width:400px) {
+    html {
+        font-size: 8.10px;
+    }
+}
+
+/*Los elementos del heigth usaran el 100% de sus contenedores*/
+html,
+body {
+    height: 100%;
+}
+
+/*Se cambiara tanto el tipo de letra, tambien el color del fondo*/
+body {
+    background: black;
+    /*Seleccionar el tipo de letra en funcion al codio en base*/
+    font-family: 'Open+Sans';
+    /*La etiqueta rem va a coger el tamaño padre que es 16px y lo multiplicara por 1.7*/
+    font-size: 1.7rem;
+    font-style: normal;
+    /*Hace a la letra un poco mas ancha*/
+    font-weight: normal;
+    /*Es el ancho que existe entre los espacios de las palabras o sangria*/
+    line-height: normal;
+    color: white;
+    /*Le va a dar un margen desde el interior de un contenedor hacia el exterior*/
+    margin: 0;
+    /*Le va a dar un margen desde el exterior hacia el interior del contenedor*/
+    padding: 12px;
+}
+/*Le vamos a dar un diseño a nuestras tablas que tengan la clase tablas-clase*/
+.tablas-clase {
+    color: red;
+    /*Tamaño del contenido*/
+    font-size: 20px;
+    /*Color del fondo de la tabla*/
+    background-color: white;
+    /*Margen desde el exterior al interior de la tabla*/
+    padding: 10px;
+}
+/*Estilos a los links*/
+a {
+    color: #cf1767;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Transicion de estilos para los links*/
+a:hover,
+/*Le genera un pequeño brillo*/
+a:focus,
+/**/
+a:active {
+    color: white;
+}
+
+/*Al poner el maus encima del link hacer que cambie el color*/
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/*Tipografía*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Frank Ruh1 libre", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    /*Faltan 2 caracteristicas*/
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+    /*Margen hacia arriba*/
+    margin-top: 6rem;
+    /*Margen hacia abajo*/
+    margin-bottom: 16rem;
+}
+ title{
+    color: yellow;
+ }
+/*Si el dispostivo tiene un tamaño mayor a 600 px hacer*/
+@media screen and(max-width:600px) {
+
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4 {
+        /*Margen hacia arriba*/
+        margin-top: 6rem;
+    }
+}
+h5, .h5, h6, .h6{
+    margin-top: 4.8rem;
+    margin-bottom: 1.2rem;
+}
+/*Estilos del header*/
+.s-header{
+    position: absolute;
+    /*De arriva para abajo*/
+    top: 2rem;
+    /*De derecha a la izquierda*/
+    right:0 ;
+    /*De izquierda a la derecha*/
+    left:0;
+    /*De abajo para arriva*/
+    bottom:0;
+    width: 100%;
+    border: 1px solid white;
+    height: 78px;
+    text-align: center;
+}
+.s-header.sticky{
+    background: #050505;
+    position: fixed;
+    top: 0;
+    left:0; 
+}
+.header-logo{
+    display: inline-block;
+    margin: 6px 0;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+.header-logo a{
+    display: block;
+    margin :0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    transition: all .3s;
+}
+.header-logo img{
+    width: 132px;
+    height: 36px;
+    margin: 0;
+}
+.header-nav-wrap{
+    display: inline-block;
+}
+.header-nav-wrap ul{
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 18px;
+}
+.header-nav-wrap li{
+    display: inline-block;
+    padding: 0;
+}
+.header-nav-wrap li a{
+    display: block;
+    line-height: calc(78px-(18px*2));
+}
+
+/*Ingreso de una clase*/
+.header-main-nav {
+    /*robot especifica que la fuente del texto probiene del google fonts y se ingresa el tipo de texto
+    que se haya descargado de la plataforma google fonts*/
+    font-family: "roboto", sans-serif;
+    /*El tamaño de la fuente de la clase header-main-nav sera de 13 pixeles de tamaño*/
+    font-size: 13px;
+    /*Se le cambiara el tipo de letra, en este caso se convertira en letras mayusculas todo 
+    la seccion del menu de la clase*/
+    text-transform: uppercase;
+    /*El menu que esta dentro de la clase header-mani-nav tendra ceparaciones las letras
+    de 0.3rem*/
+    /*el rem es para dar la cantidad de espacio a las letras de una o varias palabra*/
+    letter-spacing: 0.3rem;
+    /*Especificamos el color que le daremos al texto del menu, en este caso dar el color gris
+    cuando el usuario coloque el cursor al texto del menu para que cambie del color al que se le coloco*/
+    color: rgba(255, 255, 255, 0.5);
+    /*le especificamos que tendra un margen de 0 pixeles arriba, 0 pixeles a la derecha
+    ,0 pixeles abajo, y 4 pixeles a la izquierda*/
+    margin: 0 0 0 4px;
+    /*El z-index sirve para posicionar la caja en la posicion Z (X,Y,Z grafica de matematicas)*/
+    z-index: 2;
+    /*Tendra un posicionamiento estatico, quiere decir que las palabras del menu no se moveran
+    cuando el usuario mueva la barra de arriba hacia abajo*/
+    position: static;
+}
+
+/*Nuetra clase header-main-nav busque la etiqueta li*/
+.header-main-nav li {
+    /*Ingreso de un margen que me de espacio el texto del menu en arriba, abajo, derecha, izquierda*/
+    margin: 0 2rem;
+}
+
+/*la clase header-main-nav busque la etiqueta a*/
+.header-main-nav a {
+    /*Ingresaremos el color con el rgba (red, green, blue, alpha) para dar color a nuestro texto del menu*/
+    /*Se especifica que todas las etiquetas a que estan dentro de mi clase header cambien de color a gris*/
+    color: rgba(255, 255, 255, 0.5);
+    /*Ingresaremos una posicion relativa, posicion donde no se quedara estatica*/
+    position: relative;
+}
+
+/*Dentro de la clase  busque la etiqueta "a" la cual dara estilo hover para aplica el estilo cuando 
+el usuario pasa el ratón sobre el enlace*/
+.header-main-nav a:hover,
+/*Dentro de la clase busque la etiqueta "a" la cual dara estilo focus para aplica el estilo cuando 
+el enlace recibe el foco, como al usar el teclado para navegar*/
+.header-main-nav a:focus,
+/*Dentro de la clase busque la etiqueta "a" la cual dara estilo active para aplica el estilo mientras 
+el enlace está siendo clicado o activado.*/
+.header-main-nav a:active {
+    /*Dar color al a las opciones del menu cuando el usuario pase el raton a las opciones para que
+    se cambie de color blanco*/
+    color: white;
+}
+
+/*La clase header-main-nav busque la clase current la cual dentro de la clase current busque la etiqueta "a"*/
+.header-main-nav .current a {
+    /*Especifica que le dara color blanco a la seccion de "introduccion" de nuestro menu*/
+    color: white;
+}
+
+/*le daremos estilos a los iconos de las redes sociales*/
+/*Ingreso de la clase definida a los iconos de las redes sociales*/
+.header-social {
+    /*Especifica el tamaño de la fuente de los iconos de las redes sociales, este caso 2rem de tamaño*/
+    font-size: 2rem;
+    /*Eliminara todos los margenes externos*/
+    /*No habra ningun espacio en los cuatro lados: Arriba, Derecha, Abajo, Izquierda*/
+    margin: 0;
+    /*Posicion absoluta una posicion que no se movera*/
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+/*Dentro de nuestra clase de iconos de redes sociales busque la etiqueta li*/
+.header-social li {
+    /*Especifica que se mueva 1 rem a la derecha*/
+    margin-right: 1rem;
+}
+/*Ingreso de una Pseudo Clase*/
+/*Dentro de la clase header-social busuqe la etiqueta li, y dentro de la etiqueta li busque la clase last-child*/
+.header-social li:last-child{
+    /*Especifico que me mueva los iconos en 0 posicion*/
+    margin-right: 0;
+}
+/*Dentro de nuestra clase header-social me busque las etiquetas li y a*/
+.header-social li a {
+    /*Esto dara como resultado dar color a los iconos de las redes sociales*/
+    /*el alpha 0.5 es para darle la transparencia a los iconos*/
+    color: rgb(255, 255, 255, 0.5)
+}
+/*----------------------------------------------------------------------------------------
+* # menu trigger
+*-----------------------------------------------------------------------------------------*/
+/*alternancia de menú de encabezado*/
+.header-menu-toggle {
+    /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: none;
+    /*altura*/
+    height: 42px;
+    /*ancho*/
+    width: 42px;
+    /*Controla el espacio entre las líneas de texto dentro de un elemento*/
+    line-height: 42px;
+    /*Especifica la familia fuente del texto*/
+    font-family: "Lora", serif;
+    /*especifica la dimensión de la letra*/
+    font-size: 1.4rem;
+    /*especifica el cambio entre mayúsculas y minúsculas del texto, en este caso es en mayusculas por el uppercase*/
+    text-transform: uppercase;
+    /* Es el espaciado entre letras*/
+    letter-spacing: .2rem;
+    /*El color de el header-menu-toggle sera un blanco llegando a gris gracias al rgba*/
+    color: rgba(255, 255, 255, 0.5);
+    /*Forma animada de mostrar cambios a los elementos*/
+    transition: all .3s;
+    /*Se eliminara del flujo normal del documento y se posicionara en el punto inicial*/
+    position: absolute;
+    /*Poscion de un elemento*/
+    right: 32px;
+    /*Altura de un elemento*/
+    top: 18px;
+}
+/*La clase header-menu-toogle va a tener una animacion de cambio de color a blanco*/
+.header-menu-toggle:hover,
+.header-menu-toggle:focus {
+    color: #ffffff;
+}
+/*Contenedor usado para aplicar estilos al texto*/
+.header-menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    /*establece el margen superior de un elemento al especificar una longitud o un porcentaje*/
+    margin-top: -1px;
+    /*El color del fondo relacionado con la clase header-menu-toggle*/
+    background-color: #ffffff;
+    transition: all .5s;
+    /* forma abreviada de definir propiedades de la fuente como el tamaño de la fuente y la altura de línea*/
+    font: 0/0 a;
+    /*Aplica efectos de sombra en el texto*/
+    text-shadow: none;
+    color: transparent;
+    position: absolute;
+    /*Altura de un elemento*/
+    top: 50%;
+    left: 9px;
+    right: auto;
+    /*El bottom sirve para establecer la posición vertical de un elemento ya posicionado*/
+    bottom: auto;
+}
+/*insertar contenido antes de un elemento*/
+.header-menu-toggle span::before,
+/*insertar contenido despues de un elemento*/
+.header-menu-toggle span::after {
+    /*Color algun contenido vacio en un elemento como el span::before para crear efectos visuales*/
+    content: '';
+    width: 100%;
+    height: 100%;
+    /*El valor inherit permite que las caracteristicas sean del mismo valor que del elemento padre*/
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    transition: all .5s;
+}
+
+.header-menu-toggle span::before {
+    /*Altura de un elemento*/
+    top: -9px;
+}
+
+.header-menu-toggle span::after {
+    /*El bottom sirve para establecer la posición vertical de un elemento ya posicionado*/
+    bottom: -9px;
+}
+
+.header-menu-toggle.is-clicked span {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all .1s;
+}
+
+.header-menu-toggle.is-clicked span::before,
+.header-menu-toggle.is-clicked span::after {
+    background-color: white;
+}
+
+.header-menu-toggle.is-clicked span::before {
+     /*Altura de un elemento*/
+    top: 0;
+    /*Sirve para rotar algun elemento en el eje z(alrededor de su centro) en un angulo especifico, en este caso seria rotar 135 grados en sentido horario*/
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.header-menu-toggle.is-clicked span::after {
+    /*El bottom sirve para establecer la posición vertical de un elemento ya posicionado*/
+    bottom: 0;
+    /*Sirve para rotar algun elemento en el eje z(alrededor de su centro) en un angulo especifico, en este caso seria rotar 135 grados en sentido horario*/
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+/*-----------------------------------------------------------------
+* responsive
+* header
+--------------------------------------------------------------------*/
+/*Para pantallas menores o iguales a 1200 pixels se les aplicara un estilo especifio*/
+@media screen and (max-width:1200px) {
+    .header-main-nav {
+        /*especifica la dimensión de la letra*/
+        font-size: 12px;
+    }
+
+    .header-main-nav li {
+        /*establece el margen*/
+        margin: 0 1.4rem;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .s-header {
+        /*Alinear el texto a la derecha dentro de su contenedor*/
+        text-align: right;
+    }
+
+    .header-nav-wrap {
+        /*establece el margen a la derecha*/
+        margin-right: 36px;
+    }
+
+    .header-nav-wrap .header-social {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .s-header {
+        background-color: #050505;
+        /*La posicion fixed hace que algun elemento se mantega en la pantalla aunque el usuario hace scroll*/
+        position: fixed;
+        /*Desplaza el elemento contando desde su borde superior,Si se da un valor positivo,
+        el elemento se desplaza hacia abajo. Si se da un valor negativo, el elemento se desplaza hacia arriba*/
+        top: 0;
+    }
+
+    .header-logo img {
+        width: 128px;
+        height: 30px;
+    }
+
+    .header-nav-wrap {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: none;
+        /*Alinear el texto a la izquierda dentro de su contenedor*/
+        text-align: left;
+        height: auto;
+        width: 100%;
+        background-color: #050505;
+        /*Es el espacio entre el contenido y el borde del elemento*/
+        padding: 120px 44px 64px;
+
+    }
+
+    .header-nav-wrap .header-main-nav {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: block;
+        /*se utiliza para establecer el espacio interior en el lado izquierdo de un elemento*/
+        padding-left: 0;
+        height: auto;
+        margin: 0 0 4rem 0;
+        /*Existira un borde de linea continua y solida en la parte superior de un elemento con 1px y un rgba*/
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .header-nav-wrap .header-main-nav li {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: block;
+        margin: 0;
+        padding: 0;
+        /*Existira un borde de linea continua y solida en la parte inferior de un elemento con 1px y un rgba*/
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .header-nav-wrap .header-main-nav li a {
+        /*se utiliza para establecer el espacio interior en el lado izquierdo de un elemento*/
+        padding: 18px 0;
+        line-height: 20px;
+    }
+
+    .header-nav-wrap .header-social {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: block;
+        position: static;
+
+    }
+
+    .header-nav-wrap .header-social li {
+        /*especifica la dimensión de la letra*/
+        font-size: 1.8rem;
+        margin-right: 1.6rem;
+    }
+
+    .header-nav-wrap .header-social li a {
+        line-height: 36px;
+    }
+
+    .header-menu-toggle {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: block;
+    }
+
+}
+/*Se refiere a que pantallas con un tamaño maximo de 600px tendra un estilo*/
+@media screen and (max-width:600px) {
+    .header-logo {
+        left: 35px;
+    }
+
+}
+
+/*--------------------------------------------------------------------------------------------
+  * hacer que el menu sea visible en una pantalla larga
+  ---------------------------------------------------------------------------------------------*/
+  /*Dispositivos con un ancho de pantalla mínimo de 801 píxeles*/
+@media only screen and (min-width:801px) {
+    .header-nav-wrap {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: block !important;
+    }
+}
+
+/* ===================================================================
+ * # intro 
+ *
+ * ------------------------------------------------------------------- */
+.s-intro {
+    width: 100%;
+    /*El elemento ocupará el 100% de la altura de la ventana*/
+    height: 100vh;
+    /*altura mínima de 792 píxeles para un elemento*/
+    min-height: 792px;
+    background-color: #050505;
+}
+
+.intro-content {
+    height: 100%;
+    /*ancho máximo para un elemento de 1140px*/
+    max-width: 1140px;
+    padding-top: 20vh;
+    /*Alinea los elementos verticalmente al centro en navegadores WebKit*/
+    -webkit-align-items: center;
+    /*Alinea los elementos verticalmente al centro*/
+    -ms-flex-align: center;
+    align-items: center;
+    /*coloca el elemento en su posición normal, y a partir de ahí lo podemos desplazar la distancia que le indiquemos*/
+    position: relative;
+}
+
+.intro-pic {
+    background-color: #02182c;
+    /*No se va a repetir el fondo*/
+    background-repeat: no-repeat;
+    /*Posiciónar en la parte superior y centrada */
+    background-position: top center;
+    /*Imagen del fondo*/
+    background-image: url(../img/hero-pic.jpg);
+    /*ajustar el tamaño de una imagen de fondo para cubrir todo el elemento*/
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.intro-pic::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    /*establece el nivel de transparencia de un elemento*/
+    opacity: .2;
+}
+
+.intro-grid {
+    background-image: url(../img/pattern-dot-grid.svg);
+    background-size: 24px 24px;
+    opacity: .15;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+}
+
+.intro-text {
+    /* Mueve el elemento hacia arriba */
+    -webkit-transform: translate3d(0, -3.6rem, 0);
+    transform: translate3d(0, -3.6rem, 0);
+    position: static;
+    /*Se apilará encima de .itro-text*/
+    z-index: 1;
+}
+
+.intro-text h3 {
+    font-family: "Roboto", sans-serif;
+    /*especifica la dimensión de la letra*/
+    font-size: 2.4rem;
+    font-weight: 500;
+    /* Altura de la línea */
+    line-height: 1.333;
+    color: #cf1767;
+    margin-top: 0;
+}
+
+.intro-text h1 {
+    /*especifica la dimensión de la letra*/
+    font-size: 7.8rem;
+    font-weight: 500;
+    line-height: 1.179;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.intro-scroll {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    /*especifica la dimensión de la letra*/
+    font-size: 1.2rem;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    position: absolute;
+    bottom: 8rem;
+    left: 24px;
+    z-index: 1;
+}
+
+.intro-scroll a {
+     /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    /*Espacio de relleno en el lado derecho*/
+    padding-right: 8.8rem;
+}
+
+.intro-scroll a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    width: 72px;
+    background-color: #cf1767;
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * intro
+ * ------------------------------------------------------------------- */
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea igual a 1400 píxeles*/
+@media screen and (max-width:1400px) {
+    .intro-text h3 {
+        /*especifica la dimensión de la letra*/
+        font-size: 2.2rem;
+    }
+
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 7.2rem;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea igual a 1200 píxeles*/
+@media screen and (max-width:1200px) {
+    .intro-content {
+        max-width: 1000px;
+    }
+
+    .intro-text h3 {
+        /*especifica la dimensión de la letra*/
+        font-size: 2rem;
+    }
+
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 7rem;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea igual a 1024 píxeles*/
+@media screen and (max-width:1024px) {
+    .s-intro {
+        max-height: 800px;
+    }
+
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 6.2rem;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea igual a 900 píxeles*/
+@media screen and (max-width:900px) {
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 6rem;
+    }
+
+    .intro-text br {
+         /*El display especifica si un elemento es tratado como un block o un inline*/
+        display: none;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea a 800 píxeles*/
+@media screen and (max-width:800px) {
+    .intro-content {
+        width: 88%;
+        padding-top: 8rem;
+    }
+
+    .intro-pic {
+        top: 12%;
+        left: 40%;
+    }
+
+    .intro-pic::before {
+        opacity: .4;
+    }
+
+    .intro-grid {
+        top: 20%;
+        opacity: .1;
+    }
+
+    .intro-text h3 {
+        /*especifica la dimensión de la letra*/
+        font-size: 1.8rem;
+    }
+
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 5.6rem;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea a 700 píxeles*/
+@media screen and (max-width:700px) {
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 5rem;
+    }
+
+    .intro-pic {
+        left: 30%;
+    }
+
+    .intro-grid {
+        left: 15%;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea a 600 píxeles*/
+@media screen and (max-width:600px) {
+    .s-intro {
+        max-height: none;
+    }
+
+    .intro-content {
+        width: auto;
+    }
+
+    .intro-pic {
+        left: 20%;
+    }
+
+    .intro-grid {
+        left: 10%;
+    }
+
+    .intro-text {
+        /* Mueve el elemento hacia arriba */
+        -webkit-transform: translate3d(0, -4.8rem, 0);
+        transform: translate3d(0, -4.8rem, 0);
+    }
+
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 4.8rem;
+    }
+
+    .intro-scroll {
+        /*especifica la dimensión de la letra*/
+        font-size: 1.1rem;
+        left: 30px;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea a 400 píxeles*/
+@media screen and (max-width:400px) {
+    .s-intro {
+        min-height: 656px;
+    }
+
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 4.5rem;
+    }
+
+}
+/*bloque de estilos que se aplicará cuando el ancho de la pantalla sea a 350 píxeles*/
+@media screen and (max-width:350px) {
+    .intro-text h1 {
+        /*especifica la dimensión de la letra*/
+        font-size: 4.2rem;
+    }
+
+}
+
+/* ===================================================================
+ * # about
+ *
+ * ------------------------------------------------------------------- */
+.s-about {
+    padding-top: 19.2rem;
+    padding-bottom: 16.8rem;
+    background-color: #ffffff;
+}
+
+.s-about .row {
+    max-width: 1140px;
+}
+
+.s-about>[class*="about-"] {
+    margin-bottom: 15.2rem;
+}
+
+.s-about>[class*="about-"]:last-child {
+    margin-bottom: 0;
+}
+
+.about-me__text {
+    -webkit-columns: 2 360px;
+    -moz-columns: 2 360px;
+    columns: 2 360px;
+    column-gap: 64px;
+}
+
+.about-me__buttons {
+    margin-top: 4.8rem;
+}
+
+.about-me__buttons .column:first-child {
+    padding-right: 32px;
+}
+
+.about-me__buttons .column:last-child {
+    padding-left: 32px;
+}
+
+/* -------------------------------------------------------------------
+   * ## timeline
+   * ------------------------------------------------------------------- */
+.about-experience__timeline {
+    margin-top: 1.6rem;
+}
+
+.about-experience__timeline .column:first-child {
+    padding-right: 40px;
+}
+
+.about-experience__timeline .column:last-child {
+    padding-left: 40px;
+}
+
+.timeline {
+    padding-top: 4.8rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+     /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.timeline::after {
+    content: "";
+     /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: block;
+    width: 5.6rem;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 1px;
+    top: 0;
+}
+
+.timeline__icon-wrap {
+     /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: -2.2rem;
+    left: 5.6rem;
+}
+
+.timeline__icon {
+     /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.timeline__icon--work {
+    background-image: url(../img/icons/icon-briefcase.svg);
+}
+
+.timeline__icon--education {
+    background-image: url(../img/icons/icon-education.svg);
+}
+
+.timeline__block {
+    position: relative;
+    padding-left: 5.6rem;
+    padding-bottom: .8rem;
+    margin-top: 2.8rem;
+    min-height: 35.6rem;
+}
+
+.timeline .timeline__block:last-child {
+    padding-bottom: 0;
+}
+
+.timeline__bullet {
+    content: "";
+     /*El display especifica si un elemento es tratado como un block o un inline*/
+    display: block;
+    width: 3px;
+    height: 4.8rem;
+    background-color: #000000;
+    position: absolute;
+    left: -1px;
+    top: 8px;
+}
+
+.timeline__header {
+    margin-bottom: 3.2rem;
+}
+
+.timeline__header .timeline__timeframe,
+.timeline__header h5 {
+    font-family: "Roboto", sans-serif;
+}
+
+.timeline__header .timeline__timeframe {
+    /*especifica la dimensión de la letra*/
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.714;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: .8rem;
+    color: #000000;
+}
+
+.timeline__header h3 {
+    margin-bottom: 0;
+}
+
+.timeline__header h5 {
+    /*especifica la dimensión de la letra*/
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.333;
+    margin-top: 0;
+}
+
+/* ------------------------------------------------------------------- 
+   * responsive:
+   * about
+   * ------------------------------------------------------------------- */
+@media screen and (max-width:1200px) {
+    .s-about {
+        padding-top: 17.2rem;
+        padding-bottom: 15.6rem;
+    }
+
+    .about-experience__timeline .column:first-child {
+        padding-right: 30px;
+    }
+
+    .about-experience__timeline .column::last-child {
+        padding-left: 30px;
+    }
+
+    .timeline::after {
+        width: 4.4rem;
+    }
+
+    .timeline__icon-wrap {
+        left: 4.4rem;
+    }
+
+    .timeline__block {
+        padding-left: 4.4rem;
+    }
+
+    .timeline__header h5 {
+        /*especifica la dimensión de la letra*/
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    .about-me__text {
+        column-gap: 40px;
+    }
+
+    .about-me__buttons .column:first-child {
+        padding-right: 20px;
+    }
+
+    .about-me__buttons .column:last-child {
+        padding-left: 20px;
+    }
+
+    .about-experience__timeline .column:first-child {
+        padding-right: 16px;
+    }
+
+    .about-experience__timeline .column:last-child {
+        padding-left: 16px;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .s-about .row {
+        max-width: 700px;
+    }
+
+    .about-me__buttons .column:first-child {
+        padding-right: 16px;
+    }
+
+    .about-me__buttons .column:last-child {
+        padding-left: 16px;
+    }
+
+    .about-experience__timeline .column {
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-experience__timeline .column:first-child {
+        margin-bottom: 9.6rem;
+    }
+
+    .timeline::after {
+        width: 5.6rem;
+    }
+
+    .timeline__icon-wrap {
+        left: 5.6rem;
+    }
+
+    .timeline__block {
+        /*altura mínima de un elemento*/
+        min-height: 0;
+        /* Relleno en el lado izquierdo */
+        padding-left: 5.6rem;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .s-about {
+        /* Relleno en la parte superior */
+        padding-top: 16rem;
+    }
+
+    .s-about .row {
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .about-me__buttons .column:first-child,
+    .about-experience__timeline .column:first-child {
+        padding-right: 10px;
+    }
+
+    .about-me__buttons .column:last-child,
+    .about-experience__timeline .column:last-child {
+        padding-left: 10px;
+    }
+
+    .timeline::after {
+        width: 4.4rem;
+    }
+
+    .timeline__icon-wrap {
+        left: 4.4rem;
+    }
+
+    .timeline__block {
+        padding-left: 4.4rem;
+    }
+
+    .timeline__header h5 {
+        /*especifica la dimensión de la letra*/
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .s-about>[class*="about-"] {
+        margin-bottom: 14rem;
+    }
+
+    .about-me__buttons .column:first-child,
+    .about-experience__timeline .column:first-child {
+        padding-right: 0;
+    }
+
+    .about-me__buttons .column:last-child,
+    .about-experience__timeline .column:last-child {
+        padding-left: 0;
+    }
+
+    .timeline::after {
+        width: 2.8rem;
+    }
+
+    .timeline__icon-wrap {
+        left: 2.8rem;
+    }
+
+    .timeline__block {
+        padding-left: 2.8rem;
+    }
+
+}

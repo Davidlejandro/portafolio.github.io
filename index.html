@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlaces a css-->
+    <link rel="stylesheet" href="estilos/base.css">
+    <link rel="stylesheet" href="estilos/main.css">
+    <link rel="stylesheet" href="estilos/vendor.css">
+    <link rel="stylesheet" href="estilos/font-awesome/css/fontawesome-all.css">
+    <!--JavaScript
+    =============================================-->
+    <script src="js/modernizr.js"></script>
+    <!--El js/pace.min.js es una libreria
+    =============================================-->
+    <script src="js/pace.min.js"></script>
+    <!--Favicon - icono de la pestaña, una en apple y la otra en windows
+    ====================================================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <title>Portafolios</title>
+</head>
+
+<body id="top">
+    <!--Vista de carga o loading
+    ============================-->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!--Empezamos con el header
+    ============================-->
+    <header class="s-header">
+        <div class="header-logo">
+            <a href="index.html" class="site-logo">
+                <img src="imagenes/logo.svg" alt="Homapage">
+            </a>
+        </div>
+        <!--Barra de Navegacion----(nav.header-nav-wrap)
+        ================================================-->
+        <nav class="header-nav-wrap">
+            <ul class="header-main-nav">
+                <li class="current"><a href="#intro" class="smoothscroll" title="intro">Introduction</a></li>
+                <li><a href="#about" title="about" class="smoothscroll">About</a></li>
+                <li><a href="#services" title="services" class="smoothscroll">Services</a></li>
+                <li><a href="#works" title="works" class="smoothscroll">works</a></li>
+                <li><a href="#contact" title="contact us" class="smoothscroll">contact</a></li>
+            </ul>
+            <!--Creamos una lista desordenada para las redes sociales
+            =========================================================-->
+            <ul class="header-social">
+                <!--El elemento i nos sirve para visualisar algun icono, aria-hidden es una api para consumir los recursos de una pagina web externa a nuestro lugar
+                =============================================================================-->
+                <li><a href="#1"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#2"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#3"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#4"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header-menu-toggle"><span>Menu</a>
+    </header> <!--Fin del header
+    ============================-->
+    <!--Introduccion
+    =====================================================-->
+    <section id="intro" class="s-intro target-section">
+        <div class="row intro-content">
+            <div class="column large-9 mob-full intro-text">
+                <h3>Hola, mi nombre es David Ruiz</h3>
+                <h1>
+                    <!--Se utiliza el elemento br para hacer un salto en la linea de texto
+                    ======================-->
+                    Desarrollador web <br>
+                    Jugador de lol
+                </h1>
+            </div>
+            <div class="intro-scroll">
+                <a href="#about" class="intro-scroll-link smoothscroll">
+                    Presiona para mas informacion
+                </a>
+            </div>
+            <!--La clase intro grid podra ser usado para crear una cuadricula-->
+            <div class="intro-grid"></div>
+            <!--La clase intro pic se puede llegar a utilizar para contener una imagen-->
+            <div class="intro-pic"></div>
+        </div> <!--Finalizacion del row-->
+    </section> <!--Finalizacion del intro-->
+    <!--about(sobre nosotros)
+    ===========================-->
+    <section id="about" class="s-about target-section">
+        <div class="about-me">
+            <!--En el div row heading block es el que tendra nuestra encabezera-->
+            <div class="row heading-block">
+                <!--Vamos a generar una sola columna de nuestro h2-->
+                <div class="colum large-full">
+                    <h2 class="section-heading">About me</h2>
+                </div>
+            </div>
+            <!--La clase row about-me__content es donde se tendra nuestro contenido o cuerpo-->
+            <div class="row about-me__content">
+                <div class="colum large-full about-me__text">
+                    <!--La clase lead del elemento p me generara la primera parte de mi biografia-->
+                    <p class="lead">
+                        Mi nombre es david ruiz, tengo 19 años, me gradué en la escuela scotland school con un promedio
+                        de 9,45 sobre 10, me inscribí en distintos
+                        cursos durante el verano, entre ellos natación donde aprendí a nadar de manera sencilla.
+                    </p>
+                    <p>
+                        Entre en una pequeña institución para aprender a cocinar distintos platillos relacionados
+                        con carnes, salsas, sopas, etc.
+                    </p>
+                    <p>
+                        Entre en un preuniversitario donde me prepararon para la prueba transformar
+                        donde saque un promedio de 8,5. Dicha nota no me sirvió para entrar en ninguna de las carreras a
+                        las que apuntaba.
+                    </p>
+                    <p>
+                        Actualmente estudio ingles los sábados en la politécnica, estoy en el nivel de B2 y a acabar
+                        para entrar en el nivel C1.
+                    </p>
+                </div>
+            </div>
+            <!--Crear un boton que me lleve a una pagina sobre mi-->
+            <div class="row about-me__buttons">
+                <!--Solo se utilizara la mitad de mi pantalla para mi contenido-->
+                <div class="column large-half tab-full">
+                    <!--Aqui estara el link de la pagina para que me seleccione-->
+                    <a href="#" class="btn btn--stroke full-width">Hire me</a>
+                </div>
+                <!--Documento pdf de mi CV-->
+                <div class="colum large-half tab-full">
+                    <a href="#" class="btn btn--primary full-width">Download CV</a>
+                </div>
+            </div>
+        </div> <!--End about me
+        =======================-->
+
+        <!--Experience-->
+        <div class="about-experience">
+            <!--Esta parte sera nuestro encabezado-->
+            <div class="row heading-block">
+                <div class="column large-full">
+                    <h2 class="section-heading">Work & education</h2>
+                </div>
+            </div>
+            <!--Generar el cuerpo de nuestra linea de tiempo-->
+            <div class="row about-experience__timeline">
+                <div class="column large-half tab-full">
+                    <div class="timeline">
+                        <div class="timeline_icon-wrap">
+                            <!--La etiqueta span sirve para generar un pequeño espacio donde se podra
+                            colocar un icono-->
+                            <span class="timeline_icon- timeline_icon--work"></span>
+                        </div>
+                        <!--EL timeline__block nos permite generar una linea de tiempo historica-->
+                        <div class="timeline__block">
+                            <div class="timeline__block">
+                                <!--El bullet hace referencia a ul-->
+                                <div class="timeline__bullet"></div>
+                                <!--El timeline__header sera nuestro encabezado de la linea de tiempo-->
+                                <div class="timeline__header">
+                                    <!--El timeline__timeframe explica un momento especifico del tiempo-->
+                                    <p class="timeline__timeframe">May 2020 - Present</p>
+                                    <!--Titulo-->
+                                    <h3 class="item-title">Instituto Tecnológico Quito</h3>
+                                    <h5>Student</h5>
+                                </div>
+                                <!--Una descripcion de la linea de tiempo-->
+                                <div class="timeline__desc">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quaerat nemo non
+                                        laudantium optio
+                                        corrupti nulla, tenetur placeat dolores inventore explicabo veniam ratione iure
+                                        sit.
+                                        Consectetur, quae quasi! Veniam, earum.</p>
+                                </div>
+                            </div>
+                            <!--EL timeline__block nos permite generar una linea de tiempo historica-->
+                            <div class="timeline__block">
+                                <!--El bullet hace referencia a ul-->
+                                <div class="timeline__bullet">
+                                    <!--El timeline__header sera nuestro encabezado de la linea de tiempo-->
+                                    <div class="timeline__header">
+                                        <!--El timeline__timeframe explica un momento especifico del tiempo-->
+                                        <p class="timeline__timeframe">July 2017 - May 2020</p>
+                                        <h3 class="item-title">MB3</h3>
+                                        <h5>Frontend Developer</h5>
+                                    </div>
+                                    <div class="timeline__desc">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                            repellendus
+                                            suscipit alias
+                                            debitis ipsum velit quidem! Quod, delectus necessitatibus. Excepturi sit
+                                            facilis
+                                            provident
+                                            consequuntur, eos laudantium in sed nemo voluptate.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--EL timeline__block nos permite generar una linea de tiempo historica-->
+                            <div class="timeline__block">
+                                <!--El bullet hace referencia a ul-->
+                                <div class="timeline__bullet"></div>
+                                <!--El timeline__header sera nuestro encabezado de la linea de tiempo-->
+                                <div class="timeline__header">
+                                    <!--El timeline__timeframe explica un momento especifico del tiempo-->
+                                    <p class="timeline__timeframe">March 2016 - June 2017</p>
+                                    <h3 class="item-title">Epic Design Studio</h3>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
+                                        cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
+                                        cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet
+                                        est
+                                        occaecat nisi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Solo se utilizara la mitad de mi pantalla para mi contenido-->
+                    <div class="column large-half tab-full">
+                        <div class="timeline">
+                            <!--El timeline__icon-wrap es un icono relacionado a la línea de tiempo-->
+                            <div class="timeline__icon-wrap">
+                                <!--Aquí se creará un icono de la línea de tiempo, se utilizará el span para crear un pequeño espacio donde ira el icono-->
+                                <span class="timeline__icon timeline_icon--education"></span>
+                            </div>
+                            <!--EL timeline__block nos permite generar una linea de tiempo historica-->
+                            <div class="timeline__block"> </div>
+                            <!--El bullet hace referencia a ul-->
+                            <div class="timeline__bullet">
+                                <!--El timeline__header sera nuestro encabezado de la linea de tiempo-->
+                                <div class="timeline__header">
+                                    <!--El timeline__timeframe explica un momento especifico del tiempo-->
+                                    <p class="timeline__timeframe">April 2025 - April 2026 </p>
+                                    <h3 class="item-title">
+                                        Valencia International University
+                                    </h3>
+                                    <h5>Master Degree</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus odit, quidem
+                                        asperiores, quasi officiis nihil
+                                        consequatur recusandae ex veniam ratione temporibus quam commodi error! Tenetur
+                                        et
+                                        quam ab delectus magni.</p>
+                                </div>
+                            </div>
+                            <!--EL timeline__block nos permite generar una linea de tiempo historica-->
+                            <div class="timeline__block">
+                                <!--El bullet hace referencia a ul-->
+                                <div class="timeline__bullet"></div>
+                                <!--El timeline__header sera nuestro encabezado de la linea de tiempo-->
+                                <div class="timeline_header">
+                                    <!--El timeline__timeframe explica un momento especifico del tiempo-->
+                                    <p class="timeline__timeframe">November 2012 - May 2017</p>
+                                    <h3 class="item-title">Sumy State University</h3>
+                                    <h5>Bachelor Degree</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente minus alias ea
+                                        fuga? Voluptatem veniam cupiditate,
+                                        blanditiis soluta, amet aspernatur excepturi beatae, fugiat deserunt illo harum
+                                        animi debitis quam. Voluptatem.</p>
+                                </div>
+                            </div>
+                            <!--EL timeline__block nos permite generar una linea de tiempo historica-->
+                            <di class="timeline__block">
+                                <!--El bullet hace referencia a ul-->
+                                <div class="timeline__bullet"></div>
+                                <!--El timeline__header sera nuestro encabezado de la linea de tiempo-->
+                                <div class="timeline_header">
+                                    <p class="timeline__header">September 2017 - June 2024</p>
+                                    <h3 class="item-title">Unidad Educativa José María Velaz</h3>
+                                    <h5>High School</h5>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, laboriosam.
+                                        Soluta,
+                                        fugiat dolorum ex alias beatae odio
+                                        quis ducimus aspernatur perspiciatis accusamus blanditiis reprehenderit suscipit
+                                        aperiam sapiente cumque vel quibusdam?</p>
+                                </div>
+                            </di>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div><!--end about experience-->
+
+    </section><!-- end s-about-->
+
+    <!--Services
+        ========================================================================================================    -->
+    <!--Creación de un id para services-->
+    <section id="services" class="s-services ss-dark target-section">
+        <!--El shadow-overlay es una superposición de sombras-->
+        <div class="shadow-overlay"></div>
+        <!--El encabezado estará en el centro del bloque-->
+        <div class="row heading-block heading*block--center">
+            <!--La columna será larga y completa-->
+            <div class="column large-full">
+                <!--La seccion del encabezadao estara en el centro inferior-->
+                <h2 class="section-heading section-heading--centerbottom">Capabilities/ Habilidades</h2>
+                <!--Una descripción-->
+                <p class="section-desc">
+                    My passion and goal is to help you make your business standout.
+                </p>
+            </div>
+        </div><!--end heading-block-->
+        <!--Una lista de bloques lo cuales será largos, medianos y completo-->
+        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+            <!--La columna definira la posición y el tamaño del elemento-->
+            <div class="column item-service">
+                <!--El contenido del item-service-->
+                <div class="item-service__content">
+                    <!--Titulo-->
+                    <h4 class="item-title">Web development</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="column item-service">
+                <div class="item-services__content">
+                    <h4 class="item-title">Mobile Development</h4>
+
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+            <!--Libreria para crear animaciones-->
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">desktop applications</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">computer security</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">UI/UX Design</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div>
+
+            <div class="column item-service" data-aos="fade-up">
+                <div class="item-service__content">
+                    <h4 class="item-title">Artificial intelligence</h4>
+                    <p>
+                        Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                        a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
+                        asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                    </p>
+                </div>
+            </div><!-- end services-list-->
+        </div><!--en s-services-->
+
+    </section>
+    <!--CTA
+    ==================================================-->
+    <section class="s-cta ss-dark">
+        <div class="row heading-block heading-block--center">
+            <div class="column large-full">
+                <h2 class="section-desc">
+                    Necesitas un Hosting?
+                </h2>
+            </div>
+        </div><!--end heading-block-->
+
+        <div class="row cta-content">
+            <div class="column large-full">
+
+            </div>
+        </div>
+    </section>
+
+    <!--work ===========================================================================================
+    -->
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row heading-block heading-block--center" data-aos="fade-up">
+            <div class="column large-full">
+                <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
+                <p class="section-desc">
+                    Here are some of my selected works I have done lately. Feel free to
+                    check them out.
+                </p>
+            </div>
+        </div> <!-- end heading-block -->
+
+        <div class="masonry-wrap">
+
+            <div class="masonry">
+                <div class="grid-sizer"></div>
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="img/portfolio/gallery/g-city-building.jpg" class="thumb-link" title="Shutterbug"
+                                data-size="1050x700">
+                                <img src="img/portfolio/city-building.jpg"
+                                    srcset="img/portfolio/city-building.jpg 1x, img/portfolio/city-building@2x.jpg 2x"
+                                    alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link"
+                                target="_blank"></a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                City Building
+                            </h4>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="img/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft"
+                                data-size="1050x700">
+                                <img src="img/portfolio/woodcraft.jpg"
+                                    srcset="img/portfolio/woodcraft.jpg 1x, img/portfolio/woodcraft@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link"
+                                target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Woodcraft
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            data-size="1050x700">
+                            <img src="img/portfolio/the-beetle.jpg"
+                                srcset="img/portfolio/the-beetle.jpg 1x, img/portfolio/the-beetle@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link"
+                                target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                The Beetle
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Development
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                        <div class="item-folio__thumb">
+                            <a href="img/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Grow Green"
+                                data-size="1050x700">
+                                <img src="img/portfolio/shutterbug.jpg"
+                                    srcset="img/portfolio/shutterbug.jpg 1x, img/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link"
+                                target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Shutterbug
+                            </h4>
+                            <p class="item-folio__cat">
+                                Branding
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="img/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Guitarist"
+                                data-size="1050x700">
+                                <img src="img/portfolio/lamp.jpg"
+                                    srcset="img/portfolio/lamp.jpg 1x, img/portfolio/lamp@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link"
+                                target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Lamp
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="img/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Palmeira"
+                                data-size="1050x700">
+                                <img src="img/portfolio/fuji.jpg"
+                                    srcset="ima/portfolio/fuji.jpg 1x, img/portfolio/fuji@2x.jpg 2x" alt="">
+                            </a>
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link"
+                                target="_blank"></a>
+                        </div>
+                        <div class="item-folio__text">
+                            <h4 class="item-folio__title">
+                                Fuji
+                            </h4>
+                            <p class="item-folio__cat">
+                                Web Design
+                            </p>
+                        </div>
+                        <div class="item-folio__caption">
+                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde
+                                dolorem corrupti neque nisi.</p>
+                        </div>
+                    </div>
+                </div> <!-- end masonry__brick -->
+
+            </div> <!-- end masonry -->
+
+        </div> <!-- end masonry-wrap -->
+
+    </section> <!-- end s-work -->
+</body>
+
+</html>
